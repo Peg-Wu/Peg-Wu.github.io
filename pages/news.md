@@ -1,6 +1,6 @@
 ---
 layout: page
-title: news & events
+title: news
 subtitle: 🎐 人生海海，山山而川，不过尔尔 ~
 ---
 
