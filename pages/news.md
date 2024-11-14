@@ -1,8 +1,9 @@
 ---
 layout: page
+title: news & events
 ---
 
-# 2024
+### 2024
 
 ---
 
