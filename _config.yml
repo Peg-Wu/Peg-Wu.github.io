@@ -27,7 +27,7 @@ author: Pengpeng Wu
 #   Author's home: "https://deanattali.com"
 
 navbar-links:
-  News & Events: news
+  News & Events: /pages/news
   CV: "https://wppcv.readthedocs.io/en/latest/"
   
 
