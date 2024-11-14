@@ -1,7 +1,8 @@
 ---
 layout: page
 title: publications
-subtitle: 🎄 好好学习，Paper多多 ~
+subtitle: 🎄 认真科研，Paper多多 ~
+cover-img: "/assets/img/publications_cover_img.png"
 ---
 
 <b style="color: blue">\# <u>First Author</u></b>&nbsp;&nbsp;&nbsp;&nbsp;<b style="color: blue">\* <u>Corresponding Author</u></b>

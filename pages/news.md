@@ -2,6 +2,7 @@
 layout: page
 title: news
 subtitle: 🎐 人生海海，山山而川，不过尔尔 ~
+cover-img: "/assets/img/news_cover_img.png"
 ---
 
 ### 2024
