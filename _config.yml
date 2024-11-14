@@ -20,13 +20,14 @@ author: Pengpeng Wu
 ###############################################
 
 # navbar-links:
-#   About Me: "aboutme"
+  # About Me: "aboutme"
 #   Resources:
 #     - Beautiful Jekyll: "https://beautifuljekyll.com"
 #     - Learn markdown: "https://www.markdowntutorial.com/"
 #   Author's home: "https://deanattali.com"
 
 navbar-links:
+  About Me: "aboutme"
   CV: "https://wppcv.readthedocs.io/en/latest/"
   
 
