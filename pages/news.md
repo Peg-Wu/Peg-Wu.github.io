@@ -1,6 +1,7 @@
 ---
 layout: page
 title: news & events
+subtitle: 🎐 人生海海，山山而川，不过尔尔 ~
 ---
 
 ### 2024
