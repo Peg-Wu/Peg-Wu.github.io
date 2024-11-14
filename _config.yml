@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Wu
+title: Pengpeng Wu
 
 # Your name to show in the footer
 author: Pengpeng Wu
@@ -43,7 +43,7 @@ navbar-links:
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-title-img: "/assets/img/logo.png"
+# title-img: "/assets/img/logo.png"
 
 
 #####################################
@@ -106,7 +106,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-# url-pretty: "peg-wu.github.io"
+url-pretty: "peg-wu.github.io"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
