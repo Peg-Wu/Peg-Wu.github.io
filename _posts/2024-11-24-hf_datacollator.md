@@ -5,7 +5,7 @@ subtitle: 😎 欲买桂花同载酒，终不似，少年游。
 tags: [huggingface, datacollator]
 gh-repo: Peg-Wu
 gh-badge: [star, fork, follow]
-cover-img: ./blog_imgs/2024-11-23-hf_datacollator/cover.png
+cover-img: /_post/blog_imgs/2024-11-24-hf_datacollator/cover.png
 comments: true
 mathjax: true
 author: Pengpeng Wu
@@ -17,6 +17,7 @@ author: Pengpeng Wu
 **后面我就探索了一下DataCollatorWithPadding和DataCollatorForLanguageModeling，这两个也是平时最常使用的两个data_collator**
 
 - 数据集下载链接：[download_dataset](https://github.com/zyds/transformers-code/tree/master/02-NLP%20Tasks/14-language_model/wiki_cn_filtered)
+
 - DEBUG：
 ```python
 import os
@@ -47,7 +48,7 @@ next(iter(dl))
 
 ## 1. DataCollatorWithPadding
 
-![datacollatorwithpadding.drawio](blog_imgs/2024-11-23-hf_datacollator/datacollatorwithpadding.drawio.png){: .mx-auto.d-block :}
+![datacollatorwithpadding.drawio](/_post/blog_imgs/2024-11-24-hf_datacollator/datacollatorwithpadding.drawio.png){: .mx-auto.d-block :}
 
 {: .box-note}
 **Note:** 根据以上源码逻辑，我们似乎只需要继承`PretrainedTokenizerBase`类，自定义必要属性即可，具体的函数实现无需修改，其中：`pad_token`和`pad_token_id`属性是必须要添加的，`pad_token`可以通过调用`SpecialTokensMixin`的init方法帮助我们添加，`pad_token_id`可以通过定义`convert_tokens_to_ids`方法隐式添加，我们也可以在类属性中设置`padding_side`，确定填充的位置，话不多说，直接上代码🥱~
