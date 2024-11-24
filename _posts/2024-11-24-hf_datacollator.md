@@ -18,7 +18,7 @@ author: Pengpeng Wu
 
 - 数据集下载链接：[download_dataset](https://github.com/zyds/transformers-code/tree/master/02-NLP%20Tasks/14-language_model/wiki_cn_filtered)
 
-- DEBUG：
+- DEBUG：**(transformers == 4.46.3)**
 
 ```python
 import os
@@ -137,4 +137,111 @@ data_collator(samples)
 
 ## 2. DataColloatorForLanguageModeling
 
-- 完善中......
+在搞清楚DataCollatorWithPadding的源码逻辑后，再看DataCollatorForLanguageModeling，整个人醍醐灌顶（bushi）
+
+![image-20241124205739063]((/assets/img/blog_imgs/2024-11-24-hf_datacollator/1.png){: .mx-auto.d-block :}
+
+**DataCollatorForLanguageModeling不就是先执行了一下DataCollatorWithPadding的逻辑，然后做了一些后处理？**
+
+- 先看一下clm任务的逻辑：就是把padding后的input_ids克隆了一份，然后把pad_token_id的地方换成了-100，作为标签labels，等等，那我岂不是可以直接用前面定义的PreCollaotr？（答案是肯定的！）
+
+- mlm任务就是多调用了DataCollatorForLanguageModeling中的`torch_mask_tokens`方法，让我们来看一下整体的逻辑：
+
+![datacollatorforlanguagemodeling.drawio]((/assets/img/blog_imgs/2024-11-24-hf_datacollator/datacollatorforlanguagemodeling.drawio.png){: .mx-auto.d-block :}
+
+{: .box-note}
+**Note:** 总而言之，也就是在定义PreCollator的时候多定义几个关键的属性和方法，直接看代码吧 ~
+
+```python
+from typing import Union, List, Optional
+from transformers import PreTrainedTokenizerBase, DataCollatorForLanguageModeling
+
+vocab = {
+    "[PAD]": 0,
+    "[UNK]": 1,
+    "[CLS]": 2,
+    "[SEP]": 3,
+    "[MASK]": 4,
+    # ...
+}
+
+class PreCollator(PreTrainedTokenizerBase):
+
+    padding_side = "right"
+    all_special_ids = [0, 1, 2, 3, 4]
+
+    def get_special_tokens_mask(
+        self, token_ids_0: List[int], token_ids_1: Optional[List[int]] = None, already_has_special_tokens: bool = False
+    ) -> List[int]:
+        """
+        Retrieves sequence ids from a token list that has no special tokens added. This method is called when adding
+        special tokens using the tokenizer ``prepare_for_model`` or ``encode_plus`` methods.
+        Args:
+            token_ids_0 (:obj:`List[int]`):
+                List of ids of the first sequence.
+            token_ids_1 (:obj:`List[int]`, `optional`):
+                List of ids of the second sequence.
+            already_has_special_tokens (:obj:`bool`, `optional`, defaults to :obj:`False`):
+                Whether or not the token list is already formatted with special tokens for the model.
+        Returns:
+            A list of integers in the range [0, 1]: 1 for a special token, 0 for a sequence token.
+        """
+        assert already_has_special_tokens and token_ids_1 is None, (
+            "You cannot use ``already_has_special_tokens=False`` with this tokenizer. "
+            "Please use a slow (full python) tokenizer to activate this argument."
+            "Or set `return_special_tokens_mask=True` when calling the encoding method "
+            "to get the special tokens mask in any tokenizer. "
+        )
+
+        all_special_ids = self.all_special_ids  # cache the property
+
+        special_tokens_mask = [1 if token in all_special_ids else 0 for token in token_ids_0]
+
+
+        return special_tokens_mask
+
+
+    def convert_tokens_to_ids(self, tokens: Union[str, List[str]]) -> Union[int, List[int]]:
+        """
+        Converts a token string (or a sequence of tokens) in a single integer id (or a sequence of ids), using the
+        vocabulary.
+
+        Args:
+            tokens (`str` or `List[str]`): One or several token(s) to convert to token id(s).
+
+        Returns:
+            `int` or `List[int]`: The token id or list of token ids.
+        """
+        if tokens is None:
+            return None
+
+        if isinstance(tokens, str):
+            return self._convert_token_to_id_with_added_voc(tokens)
+
+        ids = []
+        for token in tokens:
+            ids.append(self._convert_token_to_id_with_added_voc(token))
+        return ids
+    
+
+    def _convert_token_to_id_with_added_voc(self, token):
+        if token is None:
+            return None
+
+        return vocab.get(token)
+    
+
+    def __len__(self):
+        return len(vocab)
+    
+
+precollator = PreCollator(pad_token="[PAD]", mask_token="[MASK]")
+data_collator = DataCollatorForLanguageModeling(precollator, mlm=True, mlm_probability=0.15)
+
+
+samples = [{"input_ids": [2, 10, 11, 12, 13, 3], "token_type_ids": [0, 0, 0, 0, 0, 0], "attention_mask": [1, 1, 1, 1, 1, 1]},
+           {"input_ids": [2, 10, 11, 12, 13, 14, 3], "token_type_ids": [0, 0, 0, 0, 0, 0, 0], "attention_mask": [1, 1, 1, 1, 1, 1, 1]}]
+
+data_collator(samples)
+```
+
