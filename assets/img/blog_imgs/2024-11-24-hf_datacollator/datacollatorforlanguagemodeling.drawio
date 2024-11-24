@@ -1,0 +1,94 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="第 1 页" id="HYYRqOCZhWg-GSkipiqQ">
+    <mxGraphModel dx="1430" dy="1652" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-28" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="50" y="-674" width="1070" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="Bn5Dl41cHd5tfDehmHNv-28" source="Bn5Dl41cHd5tfDehmHNv-1" target="Bn5Dl41cHd5tfDehmHNv-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-13" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;使用到的方法&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" connectable="0" parent="Bn5Dl41cHd5tfDehmHNv-8">
+          <mxGeometry x="0.0536" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="Bn5Dl41cHd5tfDehmHNv-28" source="Bn5Dl41cHd5tfDehmHNv-1" target="Bn5Dl41cHd5tfDehmHNv-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-14" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;使用到的方法&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" connectable="0" parent="Bn5Dl41cHd5tfDehmHNv-10">
+          <mxGeometry x="0.0101" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="Bn5Dl41cHd5tfDehmHNv-28" source="Bn5Dl41cHd5tfDehmHNv-1" target="Bn5Dl41cHd5tfDehmHNv-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-16" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;使用到的属性&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" connectable="0" parent="Bn5Dl41cHd5tfDehmHNv-15">
+          <mxGeometry x="0.5199" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="Bn5Dl41cHd5tfDehmHNv-28" source="Bn5Dl41cHd5tfDehmHNv-1" target="Bn5Dl41cHd5tfDehmHNv-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-19" value="补充" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=12;" vertex="1" connectable="0" parent="Bn5Dl41cHd5tfDehmHNv-18">
+          <mxGeometry x="0.6453" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-1" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;torch_mask_token&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="Bn5Dl41cHd5tfDehmHNv-28">
+          <mxGeometry y="95" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="Bn5Dl41cHd5tfDehmHNv-28" source="Bn5Dl41cHd5tfDehmHNv-2" target="Bn5Dl41cHd5tfDehmHNv-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fillColor=#e51400;strokeColor=#B20000;" edge="1" parent="Bn5Dl41cHd5tfDehmHNv-28" source="Bn5Dl41cHd5tfDehmHNv-2" target="Bn5Dl41cHd5tfDehmHNv-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-2" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;self.tokenizer.get_special_tokens_mask&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="Bn5Dl41cHd5tfDehmHNv-28">
+          <mxGeometry x="280" y="15" width="310" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-3" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;这个方法的输入就是单个样本的input_ids（list），返回也是一个list，其中是special_token的地方是1，不是special_token的地方是0&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="Bn5Dl41cHd5tfDehmHNv-28">
+          <mxGeometry x="680" width="390" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-4" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;self.tokenizer.convert_tokens_to_ids&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="Bn5Dl41cHd5tfDehmHNv-28">
+          <mxGeometry x="280" y="165" width="310" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-5" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;self.tokenizer.mask_token&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="Bn5Dl41cHd5tfDehmHNv-28">
+          <mxGeometry x="280" y="315" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="Bn5Dl41cHd5tfDehmHNv-28" source="Bn5Dl41cHd5tfDehmHNv-6" target="Bn5Dl41cHd5tfDehmHNv-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-6" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;len(self.tokenizer)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="Bn5Dl41cHd5tfDehmHNv-28">
+          <mxGeometry x="280" y="455" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-7" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;在torch_mask_token中被使用了一次，就是把self.tokenizer.mask_token转成id&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="Bn5Dl41cHd5tfDehmHNv-28">
+          <mxGeometry x="715" y="150.5" width="320" height="67" as="geometry" />
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.009;entryY=0.599;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="Bn5Dl41cHd5tfDehmHNv-28" source="Bn5Dl41cHd5tfDehmHNv-4" target="Bn5Dl41cHd5tfDehmHNv-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="Bn5Dl41cHd5tfDehmHNv-28" source="Bn5Dl41cHd5tfDehmHNv-21" target="Bn5Dl41cHd5tfDehmHNv-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-21" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;说明self.tokenizer要有__len__方法，用于返回vocab的大小&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="Bn5Dl41cHd5tfDehmHNv-28">
+          <mxGeometry x="530" y="440" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-23" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;在torch_mask_token中用于随机将input tokens替换成词库中的别的词&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="Bn5Dl41cHd5tfDehmHNv-28">
+          <mxGeometry x="820" y="440" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Bn5Dl41cHd5tfDehmHNv-25" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;...... 懒得再继续跳进去看了，已经知道是干什么的了，自己写一个好了&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" vertex="1" parent="Bn5Dl41cHd5tfDehmHNv-28">
+          <mxGeometry x="570" y="289.5" width="170" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

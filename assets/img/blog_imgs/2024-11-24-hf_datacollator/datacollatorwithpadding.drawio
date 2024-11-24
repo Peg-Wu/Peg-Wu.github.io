@@ -1,0 +1,171 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="第 1 页" id="HYYRqOCZhWg-GSkipiqQ">
+    <mxGraphModel dx="2074" dy="1196" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-78" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="12" y="65" width="1630" height="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-59" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=2;size=20;indent=5;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fillColor=none;dashed=1;dashPattern=12 12;strokeColor=#33FFFF;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="390" y="630" width="870" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" edge="1" parent="b7jxmSn5gOZJ0DQe3LGu-78" source="b7jxmSn5gOZJ0DQe3LGu-9" target="b7jxmSn5gOZJ0DQe3LGu-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-9" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;DataCollatorWithPadding&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="220" width="250" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-10" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;方法：__call__(self.tokenizer, ...)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontSize=16;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="190" y="90" width="310" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-11" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;函数：pad_without_fast_tokenizer_warnings(self.tokenizer, ...)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontSize=16;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="90" y="180" width="490" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-12" value="&lt;span style=&quot;text-align: left; font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Helvetica&quot;&gt;tokenizer需要一个名为deprecation_warnings的属性，用于存储警告信息，这个属性在PreTrainedTokenizerBase类的__init__方法中被初始化成一个空字典&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;glass=0;shadow=0;fontSize=16;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="370" y="300" width="320" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" edge="1" parent="b7jxmSn5gOZJ0DQe3LGu-78" source="b7jxmSn5gOZJ0DQe3LGu-13" target="b7jxmSn5gOZJ0DQe3LGu-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-13" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;方法：tokenizer.pad()&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontSize=16;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="70" y="300" width="230" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBorderColor=none;" edge="1" parent="b7jxmSn5gOZJ0DQe3LGu-78" source="b7jxmSn5gOZJ0DQe3LGu-14" target="b7jxmSn5gOZJ0DQe3LGu-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-28" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;使用到的属性&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=none;" vertex="1" connectable="0" parent="b7jxmSn5gOZJ0DQe3LGu-27">
+          <mxGeometry x="-0.0133" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBorderColor=none;" edge="1" parent="b7jxmSn5gOZJ0DQe3LGu-78" source="b7jxmSn5gOZJ0DQe3LGu-14" target="b7jxmSn5gOZJ0DQe3LGu-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-38" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;使用到的方法&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=none;" vertex="1" connectable="0" parent="b7jxmSn5gOZJ0DQe3LGu-37">
+          <mxGeometry x="0.6" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="b7jxmSn5gOZJ0DQe3LGu-78" source="b7jxmSn5gOZJ0DQe3LGu-14" target="b7jxmSn5gOZJ0DQe3LGu-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-42" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;使用到的方法&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" connectable="0" parent="b7jxmSn5gOZJ0DQe3LGu-41">
+          <mxGeometry x="0.8425" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-14" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;进入PretrainedTokenizerBase类的pad方法&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontSize=16;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry y="440" width="370" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.519;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" edge="1" parent="b7jxmSn5gOZJ0DQe3LGu-78" source="b7jxmSn5gOZJ0DQe3LGu-10" target="b7jxmSn5gOZJ0DQe3LGu-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBorderColor=none;" edge="1" parent="b7jxmSn5gOZJ0DQe3LGu-78" source="b7jxmSn5gOZJ0DQe3LGu-21" target="b7jxmSn5gOZJ0DQe3LGu-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-21" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;self.model_input_names&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontSize=16;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="70" y="565" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.617;entryY=0.06;entryDx=0;entryDy=0;entryPerimeter=0;labelBorderColor=none;" edge="1" parent="b7jxmSn5gOZJ0DQe3LGu-78" source="b7jxmSn5gOZJ0DQe3LGu-11" target="b7jxmSn5gOZJ0DQe3LGu-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.275;entryY=0.018;entryDx=0;entryDy=0;entryPerimeter=0;labelBorderColor=none;" edge="1" parent="b7jxmSn5gOZJ0DQe3LGu-78" source="b7jxmSn5gOZJ0DQe3LGu-11" target="b7jxmSn5gOZJ0DQe3LGu-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-29" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;被定义在类属性中，默认：[&quot;input_ids&quot;, &quot;token_type_ids&quot;, &quot;attention_mask&quot;]，input_ids必须在第一个位置，无需修改&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontSize=16;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="70" y="670" width="230" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="b7jxmSn5gOZJ0DQe3LGu-78" source="b7jxmSn5gOZJ0DQe3LGu-31" target="b7jxmSn5gOZJ0DQe3LGu-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="b7jxmSn5gOZJ0DQe3LGu-78" source="b7jxmSn5gOZJ0DQe3LGu-31" target="b7jxmSn5gOZJ0DQe3LGu-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-46" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;使用到的方法&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" connectable="0" parent="b7jxmSn5gOZJ0DQe3LGu-45">
+          <mxGeometry x="-0.6876" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-31" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;self._get_padding_truncation_strategies&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontSize=16;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="375" y="565" width="310" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="b7jxmSn5gOZJ0DQe3LGu-78" source="b7jxmSn5gOZJ0DQe3LGu-32" target="b7jxmSn5gOZJ0DQe3LGu-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-69" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;使用到的属性&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" connectable="0" parent="b7jxmSn5gOZJ0DQe3LGu-68">
+          <mxGeometry x="0.8012" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="b7jxmSn5gOZJ0DQe3LGu-78" source="b7jxmSn5gOZJ0DQe3LGu-32" target="b7jxmSn5gOZJ0DQe3LGu-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-72" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;使用到的方法&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" connectable="0" parent="b7jxmSn5gOZJ0DQe3LGu-71">
+          <mxGeometry x="0.7341" y="1" relative="1" as="geometry">
+            <mxPoint x="-7" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="b7jxmSn5gOZJ0DQe3LGu-78" source="b7jxmSn5gOZJ0DQe3LGu-32" target="b7jxmSn5gOZJ0DQe3LGu-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-75" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;使用到的方法&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" connectable="0" parent="b7jxmSn5gOZJ0DQe3LGu-74">
+          <mxGeometry x="0.5486" y="-3" relative="1" as="geometry">
+            <mxPoint y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-32" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;font color=&quot;#ea6b66&quot;&gt;self._pad：核心方法，对单个样本进行处理&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontSize=16;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="750" y="565" width="335" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;curved=1;" edge="1" parent="b7jxmSn5gOZJ0DQe3LGu-78" source="b7jxmSn5gOZJ0DQe3LGu-40" target="b7jxmSn5gOZJ0DQe3LGu-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;curved=1;" edge="1" parent="b7jxmSn5gOZJ0DQe3LGu-78" source="b7jxmSn5gOZJ0DQe3LGu-40" target="b7jxmSn5gOZJ0DQe3LGu-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-40" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;self.pad_token：@property&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontSize=16;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="500" y="700" width="235" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;curved=1;" edge="1" parent="b7jxmSn5gOZJ0DQe3LGu-78" source="b7jxmSn5gOZJ0DQe3LGu-43" target="b7jxmSn5gOZJ0DQe3LGu-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-43" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;self.pad_token_id：@property&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontSize=16;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="495" y="910" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-47" value="&lt;span style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Helvetica&quot; color=&quot;#ffffff&quot; style=&quot;font-size: 16px;&quot;&gt;获得父类SpecialTokensMixin的__init__方法中的self._pad_token，默认：None&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontSize=16;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="820" y="650" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-48" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;color: rgb(250, 250, 250); font-family: 微软雅黑; text-align: left;&quot;&gt;由于self._get_padding_truncation_strategies方法中会有一个条件判断，要求self.pad_token不能为None，并且self.pad_token_id不能&amp;lt;0，所以&lt;/span&gt;&lt;font color=&quot;#ea6b66&quot; style=&quot;scrollbar-width: none; font-family: 微软雅黑; font-size: 16px; text-align: left;&quot;&gt;需要自行添加这两个属性&lt;/font&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontSize=16;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="820" y="750" width="420" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-51" value="&lt;span style=&quot;text-align: left;&quot;&gt;&lt;font color=&quot;#ffffff&quot; face=&quot;Helvetica&quot; style=&quot;font-size: 16px;&quot;&gt;被定义在父类SpecialTokensMixin的pad_token_id方法中，利用self.convert_tokens_to_ids(self.pad_token)获得，self.convert_tokens_to_ids并没有在SpeicalTokensMixin中被定义，可以继承SpecialTokensMixin，添加该方法&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontSize=16;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="820" y="910" width="420" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="b7jxmSn5gOZJ0DQe3LGu-78" source="b7jxmSn5gOZJ0DQe3LGu-53" target="b7jxmSn5gOZJ0DQe3LGu-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-53" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;self.padding_side&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontSize=16;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="1110" y="130" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-60" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;被定义在类属性中，默认：&quot;right&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&quot;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontSize=16;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="1410" y="120" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" edge="1" parent="b7jxmSn5gOZJ0DQe3LGu-78" source="b7jxmSn5gOZJ0DQe3LGu-65" target="b7jxmSn5gOZJ0DQe3LGu-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-65" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;self.pad_token_type_id：@property，没有设置setter方法&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontSize=16;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="1120" y="260" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-66" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;self.pad_token_id：@property&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontSize=16;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="1120" y="420" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-67" value="&lt;span style=&quot;font-family: 微软雅黑; text-align: left;&quot;&gt;&lt;font color=&quot;#f2f2f2&quot; style=&quot;font-size: 16px;&quot;&gt;获得父类SpecialTokensMixin的__init__方法中的self._pad_token_type_id，默认：0&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontSize=16;sketch=1;curveFitting=1;jiggle=2;fillColor=none;labelBorderColor=none;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="1410" y="230" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="b7jxmSn5gOZJ0DQe3LGu-77" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=2;size=20;indent=5;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fillColor=none;dashed=1;dashPattern=12 12;strokeColor=#33FF33;" vertex="1" parent="b7jxmSn5gOZJ0DQe3LGu-78">
+          <mxGeometry x="970" y="100" width="660" height="390" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
