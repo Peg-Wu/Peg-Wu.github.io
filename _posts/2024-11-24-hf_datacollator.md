@@ -139,7 +139,7 @@ data_collator(samples)
 
 在搞清楚DataCollatorWithPadding的源码逻辑后，再看DataCollatorForLanguageModeling，整个人醍醐灌顶（bushi）
 
-![image-20241124205739063]((/assets/img/blog_imgs/2024-11-24-hf_datacollator/1.png){: .mx-auto.d-block :}
+![image-20241124205739063](/assets/img/blog_imgs/2024-11-24-hf_datacollator/1.png){: .mx-auto.d-block :}
 
 **DataCollatorForLanguageModeling不就是先执行了一下DataCollatorWithPadding的逻辑，然后做了一些后处理？**
 
@@ -147,7 +147,7 @@ data_collator(samples)
 
 - mlm任务就是多调用了DataCollatorForLanguageModeling中的`torch_mask_tokens`方法，让我们来看一下整体的逻辑：
 
-![datacollatorforlanguagemodeling.drawio]((/assets/img/blog_imgs/2024-11-24-hf_datacollator/datacollatorforlanguagemodeling.drawio.png){: .mx-auto.d-block :}
+![datacollatorforlanguagemodeling.drawio](/assets/img/blog_imgs/2024-11-24-hf_datacollator/datacollatorforlanguagemodeling.drawio.png){: .mx-auto.d-block :}
 
 {: .box-note}
 **Note:** 总而言之，也就是在定义PreCollator的时候多定义几个关键的属性和方法，直接看代码吧 ~
