@@ -11,9 +11,8 @@ mathjax: true
 author: Pengpeng Wu
 ---
 
-{: box-sucess}
+{: .box-success}
 最近遇到一个问题，做nlp的时候很多tokenizer都是直接从huggingface hub上拉下来的或者用自己的文本语料训练出来的。但是在生物信息学领域，以单细胞转录组大模型geneformer为例，每个样本是一个细胞，每个token是一个gene，我们并不需要进行分词操作（相当于已经分好词了），我们完全可以自己定义一个Tokenizer类，用于将gene转换成id，并进行截断，填充，加特殊字符等操作。由于我后续想要使用transformers中的DataCollatorForLanguageModeling，但是实例化这个类时必须要传入一个tokenizer，如果我想要使用这个datacollator，我必须搞清楚它使用了tokenizer中的哪些属性和方法，然后自定义一个"伪"tokenizer或者将必要的属性和方法融入我自定义的Tokenizer类，使两者能够相互适配~（主要是因为太懒了，不想自己重新写一个datacollator，而且这样做效率不一定比官方实现的高，不优雅）🤷‍♂️
-
 
 **后面我就探索了一下DataCollatorWithPadding和DataCollatorForLanguageModeling，这两个也是平时最常使用的两个data_collator**
 
