@@ -93,7 +93,7 @@ class MixtralSparseMoeBlock(nn.Module):
 - 然后使用torch.topk函数将routing_weights每一行最大的两个权重值以及对应的索引拿出来，分别作为新的routing_weights和selected_experts，他们的形状均为(20, 2), 这样，我们选择哪两个专家，以及这两个专家的权重就确定下来了，后面也对新的routing_weights重新进行了一下softmax，让两个专家的权重和为1
 - 接着，初始化一个形状为(20, 128)的全0张量，用于存储计算结果
 
-🧐 ***其实到这里，一切都还是比较容易理解的，后面初始化的一个expert_mask，直接给我干懵了 ，其实只要理解了expert_mask每个元素的含义，后面就比较好理解了~***
+🧐 **其实到这里，一切都还是比较容易理解的，后面初始化的一个expert_mask，直接给我干懵了 ，其实只要理解了expert_mask每个元素的含义，后面就比较好理解了~**
 
 - 在permute之前，expert_mask的形状是(20, 2, 8)，这个还是比较容易理解的，就是对每个专家进行了一下one-hot编码，如下图：
 
@@ -117,7 +117,7 @@ current_state = hidden_states[None, top_x].reshape(-1, hidden_dim)
 current_hidden_states = expert_layer(current_state) * routing_weights[top_x, idx, None]
 ```
 
-🧐 ***看到这里，一切都明朗了，写的真的很精彩，Mixtral选择遍历每个专家，而不是每个token，极大减小了时间复杂度，也是学习到了~***
+🧐 **看到这里，一切都明朗了，写的真的很精彩，Mixtral选择遍历每个专家，而不是每个token，极大减小了时间复杂度，也是学习到了~**
 
 # 3. 练习
 
