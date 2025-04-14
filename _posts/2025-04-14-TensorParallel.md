@@ -39,7 +39,6 @@ author: Pengpeng Wu
 ## 2. 代码实现
 
 - 在LLM中，通常会为MLP层和Attention层实现TP
-
 - 但是，需要注意的是，huggingface的transformers实现的TP，只是降低了单个矩阵计算的大小，并没有把各个矩阵分片到不同的显卡上，如果需要解决这个问题，需要改一下代码，分配权重所在设备
 
 ### 2.1 MLP
@@ -224,9 +223,7 @@ class LlamaAttention(nn.Module):
 ```
 
 - 在LlamaAttention中，实现TP的部分主要包含：
-
 1. 生成QKV矩阵时：均对权重矩阵采取列分割
-
 2. 最后一个全连接输出层：采用行分割，对attn_output进行列分割，对权重矩阵进行行分割
 
 {: .box-note}
