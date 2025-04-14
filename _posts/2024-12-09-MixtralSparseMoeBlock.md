@@ -121,10 +121,5 @@ current_hidden_states = expert_layer(current_state) * routing_weights[top_x, idx
 
 # 3. 练习
 
-- 我尝试将huggingface bert的FFN层换成了这种MoE架构，代码地址：[Peg-Wu/Bert2MoE (github.com)](https://github.com/Peg-Wu/Bert2MoE)
-- 就是简单改了一下，没有做详细的测试，也是拿来练练手~
-
-
-
-🤗 如果这篇博客对你有帮助，麻烦给Bert2MoE一个star吧，谢谢~
+- 尝试将huggingface bert的FFN层换成MoE架构
 
