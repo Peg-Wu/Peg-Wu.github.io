@@ -32,31 +32,7 @@ author: Pengpeng Wu
 
 - 在Huggingface的RewardTrainer中，数据集中的每个问答会被拼接在一起，形成一个长字符串：
 
-> <u>**原始问答数据：**</u>
->
-> [{'content': '这里是用户的提问', 'role': 'user'}, {'content': '这里是模型的回答', 'role': 'assistant'}]
->
-> 
->
-> <u>**拼接后的问答数据：**</u>
->
-> <|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\n这里是用户的提问<|im_end|>\n<|im_start|>assistant\n这里是模型的回答<|im_end|>\n
->
-> 
->
-> **<u>把换行符整理一下，就是这个样子：</u>**
->
-> <|im_start|>system
->
-> You are a helpful assistant.<|im_end|>
->
-> <|im_start|>user
->
-> 这里是用户的提问<|im_end|>
->
-> <|im_start|>assistant
->
-> 这里是模型的回答<|im_end|>
+![data_organization](/assets/img/blog_imgs/2025-04-27-reward_model/insert.png)
 
 - 接下来，使用tokenizer对拼接后的chosen和rejected字符串进行tokenize。对于每一个样本，除了保留原本的四个字段外，还会产生四个新的字段：input_ids_chosen，attention_mask_chosen，input_ids_rejected，attention_mask_rejected
 - 最后，一个很重要的处理部分，我们只保留input_ids_chosen和input_ids_rejected都小于等于max_length的样本，以防止截断文本造成信号丢失和引入噪声，导致模型无法正确学习chosen/rejected标签的区分
