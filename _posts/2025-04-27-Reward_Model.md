@@ -15,7 +15,7 @@ author: Pengpeng Wu
 🎈 本节将解读如何使用trl训练一个Reward Model
 
 - 参考代码：https://github.com/huggingface/trl/blob/main/examples/scripts/reward_modeling.py
-- transformers：4.49.0
+- transformers：4.49.0; trl: 0.17.0
 
 ## 1. Dataset Overview
 
