@@ -45,8 +45,6 @@ author: Pengpeng Wu
   - 其实就是直接将output_embeddings.weight和input_embeddings.weight划等号
   - 后面都是一些关于扩充词表的操作，无需关注~
 
-![image-20250506141007242](./2025-05-06-tie_weights/image-20250506141007242.png)
-
 - 到这里，所有的权重绑定操作就完成了，总结一下，需要写三个部分：
   - **Downstream Model：get_output_embeddings()**
   - **Backbone Model：get_input_embeddings()**
