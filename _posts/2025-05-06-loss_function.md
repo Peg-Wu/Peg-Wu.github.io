@@ -5,7 +5,7 @@ subtitle: 😢 The holiday is over
 tags: [huggingface]
 gh-repo: Peg-Wu
 gh-badge: [star, fork, follow]
-cover-img: /assets/img/blog_imgs/2025-05-06-loss_function/cover.jpg
+cover-img: /assets/img/blog_imgs/2025-05-06-loss_function/cover.png
 comments: true
 mathjax: true
 author: Pengpeng Wu
