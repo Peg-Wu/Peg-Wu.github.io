@@ -129,7 +129,17 @@ def repeat_kv(hidden_states: torch.Tensor, n_rep: int) -> torch.Tensor:
 {: .box-note}
 🥺 生物上，有很多模型其实是不需要位置编码的，注意力也是双向的，有时候输入也可能是多个序列，比如：以单细胞基因扰动预测任务为例，模型的输入不仅仅是control细胞的基因表达，同时也要融入被敲除基因的embedding，如果想直接调用transformers写的Llama模型，可能不太方便，因为有旋转位置编码要取消，模型的输入也要添加，attention_mask也要改成双向的。最近的虚拟细胞挑战赛Arc Institute对STATE的写法确实很精彩，也让我学习到了很多，官方以一种无侵入式的方式将原始的Llama改成了双向Llama，还添加了额外的输入。
 
+- refer to：https://github.com/ArcInstitute/state/blob/main/src/state/tx/models/utils.py
+- 这种方式虽然写起来很优雅，但是如果transformers库对Llama做更改了的话，维护起来就比较麻烦了，还是更推荐从头自己写
+
 ```python
+import torch
+from torch import nn
+from transformers import PreTrainedModel
+from transformers.models.llama.modeling_llama import LlamaModel
+from transformers.models.llama.configuration_llama import LlamaConfig
+
+
 class NoRoPE(nn.Module):
     """
     A drop-in replacement for LlamaRotaryEmbedding that always returns:
@@ -137,25 +147,16 @@ class NoRoPE(nn.Module):
     of shape (batch_size, seq_len, head_dim), so rotary has no effect.
     """
 
-    def __init__(
-        self, 
-        head_dim: int, 
-        hidden_size: int
-    ):
+    def __init__(self, head_dim: int):
         super().__init__()
         self.head_dim = head_dim
-        self.hidden_size = hidden_size
 
-    def forward(
-        self, 
-        hidden_states: torch.Tensor, 
-        position_ids: torch.LongTensor
-    ):
+    def forward(self, hidden_states: torch.Tensor, position_ids: torch.LongTensor):
         # hidden_states: (batch_size, seq_len, hidden_dim)
-        batch_size, seq_len, _ = hidden_states.shape
+        batch_size, seq_len, _hidden_dim = hidden_states.shape
 
         # Create cos = ones, sin = zeros
-        # shape --> (batch_size, seq_len, head_dim)
+        #   shape --> (batch_size, seq_len, head_dim)
         cos = hidden_states.new_ones(batch_size, seq_len, self.head_dim)
         sin = hidden_states.new_zeros(batch_size, seq_len, self.head_dim)
         return cos, sin
@@ -172,8 +173,14 @@ class LlamaBidirectionalModel(LlamaModel):
 
         self.rotary_emb = NoRoPE(
             head_dim=config.head_dim,
-            hidden_size=config.hidden_size,
         )
+        
+        # Explicitly disable causal attention
+        self.config.is_causal = False
+        # force every layer to be non-causal
+        for layer in self.layers:
+            if hasattr(layer, "self_attn"):
+                layer.self_attn.is_causal = False
 
     def _update_causal_mask(
         self,
@@ -184,16 +191,16 @@ class LlamaBidirectionalModel(LlamaModel):
         output_attentions: bool = False,
     ):
         # By returning None, we disable any causal‐(look‐ahead) masking.
-        # The only mask that remains is whatever “attention_mask” the user has passed
+        # The only mask that remains is whatever "attention_mask" the user has passed
         # (e.g. padding‐mask), which will be handled by Flash/SDPA internally as non‐causal.
         return None
 
     def forward(
         self,
         input_ids: torch.LongTensor = None,
-        attention_mask: torch.Tensor = None,
+        attention_mask: torch.Tensor | None = None,
         position_ids: torch.LongTensor = None,
-        past_key_values = None,
+        past_key_values=None,
         inputs_embeds: torch.FloatTensor = None,
         use_cache: bool = None,
         output_attentions: bool = None,
@@ -202,6 +209,18 @@ class LlamaBidirectionalModel(LlamaModel):
         **flash_attn_kwargs,
     ):
         flash_attn_kwargs["is_causal"] = False
+        
+        # If no attention_mask is provided, create an all-ones mask (no masking)
+        # This ensures bidirectional attention with correct device/dtype
+        if attention_mask is None:
+            # Get batch size (B) and sequence length (S) from input_embeds if available, else from input_ids.
+            # If neither is available, fall back to attention_mask=None and log a warning.
+            B = None
+            S = None
+            if inputs_embeds is not None:
+                B, S = inputs_embeds.size(0), inputs_embeds.size(1)
+            if B and S:
+                attention_mask = torch.ones((B, 1, S, S), dtype=torch.float, device=inputs_embeds.device)
 
         return super().forward(
             input_ids=input_ids,
