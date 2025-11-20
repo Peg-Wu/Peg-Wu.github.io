@@ -12,7 +12,7 @@ author: Pengpeng Wu
 ---
 
 {: .box-success}
-⚙️ 记录一下transformers中的Llama是怎么写attention的，并介绍如何无侵入式修改Llama为双向Llama，并取消Ro位置编码
+⚙️ 记录一下transformers中的Llama是怎么写attention的，并介绍如何无侵入式修改Llama为双向Llama，并取消RoPE旋转位置编码
 
 ```python
 class LlamaAttention(nn.Module):
