@@ -11,7 +11,7 @@ cover-img: "/assets/img/publications_cover_img.png"
 
 ---
 
-1. **Pengpeng Wu#**, Hailin Wei#, Yazi Li#, Xinwei Zheng, Caibin Zhou, Xihao Hu, **Chenfei Wang***. [DeSCOPE: Decoding Single-Cell Observations of Perturbed Expression](https://www.biorxiv.org/content/10.64898/2026.04.13.718147v1). **<u>biorxiv</u>** [<font color=green>[Software]</font>](https://github.com/Peg-Wu/DeSCOPE)
+1. **Pengpeng Wu#**, Hailin Wei#, Yazi Li#, Xinwei Zheng, Caibin Zhou, Xihao Hu, **Chenfei Wang***. [Decoding Single-Cell Omics of Perturbation Responses Using DeSCOPE](https://www.biorxiv.org/content/10.64898/2026.04.13.718147v1). **<u>biorxiv</u>** [<font color=green>[Software]</font>](https://github.com/Peg-Wu/DeSCOPE)
 
 ### <b style="color: red">2023</b>
 
