@@ -17,7 +17,7 @@ My  research focuses on **AI for Biology**, with a specialization in the **AI Vi
 "VCs must work across biological scales, over time, and across data modalities and should help reveal the programming language of cellular systems and provide an interface to use it for engineering purposes." -- [***Cell 2024***](https://www.cell.com/cell/fulltext/S0092-8674(24)01332-1)
 
 <div align="center">
-  <img src="/assets/img/page_imgs/aivc.jpg" width="100%" />
+  <img src="/assets/img/page_imgs/aivc.jpg" width="80%" />
 </div>
 
 ### <b style="color: purple">Publications</b>
