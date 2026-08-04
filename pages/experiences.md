@@ -16,7 +16,7 @@ cover-img: "/assets/img/experiences_cover_img.png"
 - **Status: Dual Offer (Internship + Full-time)**
 
 <div align="center">
-  <img src="/assets/img/page_imgs/bio-compass.png" width="80%" />
+  <img src="/assets/img/page_imgs/bio-compass.png" width="40%" />
 </div>
 **1. Mingma Technologies / SEQUANTA - 明码（上海）生物科技有限公司 / 序祯达**
 
