@@ -28,7 +28,7 @@ My  research focuses on **AI for Biology**, with a specialization in the **AI Vi
 
 ---
 
-1. **Pengpeng Wu#**, Hailin Wei#, Yazi Li#, Xinwei Zheng, Caibin Zhou, Xihao Hu, **Chenfei Wang***. [Decoding Single-Cell Omics of Perturbation Responses Using DeSCOPE](https://www.biorxiv.org/content/10.64898/2026.04.13.718147v1). **<u>bioRxiv</u>** [<font color=green>[Software]</font>](https://github.com/Peg-Wu/DeSCOPE)
+1. **Pengpeng Wu#**, Hailin Wei#, Yazi Li#, Xinwei Zheng, Caibin Sheng, Xihao Hu, Ke Tang, **Qiu Wu***, **Chenfei Wang***. [Decoding Single-Cell Omics of Perturbation Responses Using DeSCOPE](https://www.biorxiv.org/content/10.64898/2026.04.13.718147v1). **<u>bioRxiv</u>** [<font color=green>[Software]</font>](https://github.com/Peg-Wu/DeSCOPE)
 
 #### <b style="color: red">2023</b>
 
