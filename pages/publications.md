@@ -28,14 +28,10 @@ My  research focuses on **AI for Biology**, with a specialization in the **AI Vi
 
 ---
 
-1. **Pengpeng Wu#**, Hailin Wei#, Yazi Li#, Xinwei Zheng, Caibin Sheng, Xihao Hu, Ke Tang, **Qiu Wu\***, **Chenfei Wang\***. [Decoding Single-Cell Omics of Perturbation Responses Using DeSCOPE](https://www.biorxiv.org/content/10.64898/2026.04.13.718147v1). **<u>bioRxiv</u>** [<font color=green>[Software]</font>](https://github.com/Peg-Wu/DeSCOPE)
+1. **Pengpeng Wu#**, Hailin Wei#, Yazi Li#, Xinwei Zheng, Caibin Sheng, Ke Tang, Xihao Sherlock Hu, **Qiu Wu\***, **Chenfei Wang\***. [Decoding Single-Cell Omics of Perturbation Responses Using DeSCOPE](https://www.biorxiv.org/content/10.64898/2026.04.13.718147v1). **<u>bioRxiv</u>** [<font color=green>[Software]</font>](https://github.com/Peg-Wu/DeSCOPE)
 
 #### <b style="color: red">2023</b>
 
 ---
 
 1. **Pengpeng Wu#**, Zhenjun Nie, Zhiqiang Huang, **Xiaodan Zhang***. [CircPCBL: Identification of Plant CircRNAs with a CNN-BiGRU-GLT Model](https://www.mdpi.com/2223-7747/12/8/1652). **<u>Plants-Basel</u>** [<font color=green>[Software]</font>](https://github.com/Peg-Wu/CircPCBL)
-
-### <font color=purple>Visitors</font>
-
-<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=cMuCMHUUQdD6uLRw-SJWj0bBsgXle74QRc_UT2MKMdc&w=250"></script>

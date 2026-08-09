@@ -9,7 +9,7 @@ cover-img: "/assets/img/experiences_cover_img.png"
 
 **2. Vitaura (Beijing) Technology Co., Ltd. - 百曜（北京）科技有限公司**
 
-- Website: [Bio-Compass](https://www.bio-compass.ai)
+- Website: [Vitaura](https://www.bio-compass.ai)
 - Date: 2026.08.26 - Present
 - Mentor: **TBD**
 - Direction: AIVC
