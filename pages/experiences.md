@@ -9,7 +9,7 @@ cover-img: "/assets/img/experiences_cover_img.png"
 
 **2. Vitaura (Beijing) Technology Co., Ltd. - 百曜（北京）科技有限公司**
 
-- Website: [Vitaura](vitaura.cn)
+- Website: [Vitaura](https://www.vitaura.cn)
 - Date: 2026.08.25 - Present
 - Mentor: Qi Zhou
 - Direction: AIVC
